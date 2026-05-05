@@ -108,7 +108,7 @@ def step4_extract_password(length, charset=string.ascii_lowercase + string.digit
 
 
 
-# Final ExecutionPart
+# Final Execution Part
 def main():
     
     if not step1_verify_users_table():
