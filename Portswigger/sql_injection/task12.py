@@ -110,7 +110,6 @@ def step4_extract_password(length, charset=string.ascii_lowercase + string.digit
 
 # Final ExecutionPart
 def main():
-    print("=== Oracle Error‑Based Blind SQL Injection → Extract Password → Auto Login ===\n")
     
     if not step1_verify_users_table():
         print("[-] Users table missing. Exiting.")
